@@ -1,0 +1,5 @@
+# Generated stuff
+*.log
+/node_modules/
+/dist/
+/coverage/

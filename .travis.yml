@@ -1,0 +1,16 @@
+language: node_js
+
+node_js:
+  - '6'
+
+after_success:
+  # Send coverage data to coveralls.
+  - npm run test:cover:travis
+
+notifications:
+  slack:
+    rooms:
+      secure: b8liuGlq+tZE332EytJBBXI8QFBfIlyBC5ibzAH3R8F0l4FIOw9Jp6mpfx+fbLW8AiHmfX6hODYU38DkKOsqLCEzPCoTBMrr/yeelsBpOT2DOyAdo45FEeZcA2Kf5e97W6C1z3G3q8QuPkHzNwRchN5EqFnVBRB2PHEiRqyk113AyV/UcRfLqNPuRYAV663psk3y9P0M5a5pKQ1e3G+kG3pP2VCy1+FkWKnbTDsrBPQXmFuMINi8Dkb5gIFUfjQ57TjFkzwftu5i96C9Wf5IB4K2tiadV8w011H6xKpl1Aef7yH46le0CX7x0JvRegJoofwDA4tibkKQBikLpzcMfwTsP167gCQWZVynLycXLikhFwhyXGMBKn0vPYRJ6TGiYLc7Yg0q5KncUZkSCpKlH//wyhWLHZ8eQwQu7hnnCd8+sgGAZeFJKh+k9MJRevaZ4WVWPjv6ZjAGXT4I7qhaMBeJp248tA90bvlvOPAhITkBX+Vsa4HppZ5NDHEqSwi/8NNY8kNy7oIfGYOc2dSrxf+xXHrNLpvI7j/W7/G8DPwpoLFch3ARCy+WxOMU/rcE76O54B8D+RdQJaO8oMVwrbkH4oH9/yuFc7J29R/fLFA/2w7fB6YOJkBmrEe3ph20tlJgnukcy+up6QT/2IvluA6H+dT/W4CHbaFOgLX/bvo=
+    on_success: change
+    on_failure: always
+    on_start: never
