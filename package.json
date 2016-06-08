@@ -23,13 +23,17 @@
     "test:watch": "npm run test -- --watch"
   },
   "dependencies": {
-    "react": "15.0.2",
-    "react-dom": "15.0.2",
+    "material-ui": "0.15.0",
+    "normalize.css": "4.1.1",
+    "react": "15.1.*",
+    "react-dom": "15.1.*",
     "react-redux": "4.4.5",
     "react-router": "2.4.0",
+    "react-tap-event-plugin": "1.0.0",
     "redux": "3.5.2"
   },
   "devDependencies": {
+    "autoprefixer": "6.3.6",
     "babel-cli": "6.8.0",
     "babel-core": "6.8.0",
     "babel-loader": "6.2.4",
@@ -62,6 +66,7 @@
     "mocha": "2.4.5",
     "node-sass": "3.7.0",
     "npm-run-all": "1.8.0",
+    "postcss-loader": "0.9.1",
     "react-addons-test-utils": "15.0.2",
     "redux-immutable-state-invariant": "1.2.3",
     "rimraf": "2.5.2",

@@ -1,0 +1,10 @@
+# humanstxt.org/humans.txt
+
+/* TEAM */
+	The One Guy: Oliver Thébault
+	Contact: contact [at] oliver-thebault.com
+	Twitter: @OliverThebault
+	From: Lyon, France
+
+/* SITE */
+	Language: English / French
