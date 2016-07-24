@@ -1,0 +1,10 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+
+  // Fix normalize + mui buttons
+  [type="button"] {
+    appearance: none;
+  }
+}

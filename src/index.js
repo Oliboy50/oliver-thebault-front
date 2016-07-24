@@ -15,6 +15,7 @@ import routes from './routes';
 
 // Styles
 import '../node_modules/normalize.css/normalize.css';
+import '../node_modules/font-awesome/css/font-awesome.min.css';
 import './styles/styles.scss';
 
 // Add tap events handling (for mobile devices)

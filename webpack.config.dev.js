@@ -28,14 +28,15 @@ export default {
   ],
   module: {
     loaders: [
-      {test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel']},
+      {test: /\.js$/, loaders: ['babel'], include: path.join(__dirname, 'src')},
       {test: /\.eot(\?v=\d+.\d+.\d+)?$/, loader: 'file'},
-      {test: /\.(woff|woff2)$/, loader: 'file-loader?prefix=font/&limit=5000'},
-      {test: /\.ttf(\?v=\d+.\d+.\d+)?$/, loader: 'file-loader?limit=10000&mimetype=application/octet-stream'},
-      {test: /\.svg(\?v=\d+.\d+.\d+)?$/, loader: 'file-loader?limit=10000&mimetype=image/svg+xml'},
+      {test: /\.(woff|woff2)(\?v=\d+.\d+.\d+)?$/, loader: 'file?prefix=font/&limit=5000'},
+      {test: /\.ttf(\?v=\d+.\d+.\d+)?$/, loader: 'file?limit=10000&mimetype=application/octet-stream'},
+      {test: /\.svg(\?v=\d+.\d+.\d+)?$/, loader: 'file?limit=10000&mimetype=image/svg+xml'},
       {test: /\.(jpe?g|png|gif)$/i, loaders: ['file']},
-      {test: /\.ico$/, loader: 'file-loader?name=[name].[ext]'},
-      {test: /(\.css|\.scss)$/, loaders: ['style', 'css?sourceMap', 'sass?sourceMap', 'postcss-loader']},
+      {test: /\.ico$/, loader: 'file?name=[name].[ext]'},
+      {test: /\.css$/, loaders: ['style', 'css']},
+      {test: /\.scss$/, loaders: ['style', 'css?sourceMap', 'postcss', 'sass?sourceMap'], include: path.join(__dirname, 'src')},
     ],
   },
   postcss: {
